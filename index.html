@@ -5,7 +5,9 @@
 <body>
   <script>
     const _sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
-    await _sleep(100);
+    async function foo() {
+      await _sleep(100);
+    }
     window.location.href = 'https://github.com/motomura-s'
   </script>
 </body>  
