@@ -4,7 +4,8 @@
 <link rel="shortcut icon" type="image/x-icon" href="https://motomura-s.github.io/favicon.ico">
 <body>
   <script>
-    chrome.browserAction.setIcon({path:"https://motomura-s.github.io/favicon.ico"});
+    const _sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+    await _sleep(100);
     window.location.href = 'https://github.com/motomura-s'
   </script>
 </body>  
