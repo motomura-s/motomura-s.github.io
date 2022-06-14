@@ -4,6 +4,7 @@
 <link rel="shortcut icon" type="image/x-icon" href="https://motomura-s.github.io/favicon.ico">
 <body>
   <script>
+    const _sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
     async function foo() {
       await _sleep(1000);
       window.location.href = 'https://github.com/motomura-s'
